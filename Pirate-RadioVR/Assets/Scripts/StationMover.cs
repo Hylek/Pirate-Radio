@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StationMover : MonoBehaviour {
 
-	private RigidBody rb;
+	//private RigidBody rb;
 
 	// Use this for initialization
 	void Start () {
