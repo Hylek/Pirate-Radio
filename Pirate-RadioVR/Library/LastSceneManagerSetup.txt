@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/lightroom.unity
-=======
-- path: Assets/Scenes/area-3.unity
->>>>>>> 7da783df321ed7ebbef5dbb739e8e5db3620fbfb
+- path: Assets/Scenes/area1light.unity
   isLoaded: 1
   isActive: 1
