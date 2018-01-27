@@ -1,5 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 877691e06d1f49a419c2775ad3c4d06b
+timeCreated: 1517065573
+=======
 guid: b5e3fc502cd7a2e4288b65fb0d9f202d
+timeCreated: 1517065442
+>>>>>>> 4984186cc484e9152d9c3b1c39ea2be4e8bd598e
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +16,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: wall A3 03
-    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -84,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
