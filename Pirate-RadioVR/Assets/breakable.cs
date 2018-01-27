@@ -7,11 +7,12 @@ using UnityEngine;
 public class breakable : MonoBehaviour
 {
     public GameObject[] unlockables;
+    public GameObject[] deactivateables;
 
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.relativeVelocity.magnitude > 2)
+        if (collision.relativeVelocity.magnitude > 4)
         {
 
 
@@ -26,7 +27,18 @@ public class breakable : MonoBehaviour
 
                 }
             }
+            if (deactivateables != null)
+            {
 
+                foreach (GameObject item in deactivateables)
+                {
+
+                    item.SetActive(false);
+
+
+                }
+            }
+            Debug.Log(gameObject.name + " has been popped by "  + collision.gameObject.name + "with a force of " +collision.relativeVelocity.magnitude);
             Destroy(gameObject);
 
         }
