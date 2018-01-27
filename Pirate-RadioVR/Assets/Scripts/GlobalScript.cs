@@ -5,6 +5,7 @@ using UnityEngine;
 public class GlobalScript : MonoBehaviour {
 	public static GlobalScript instance = null;
 	public int switchesToPull = 3;
+	public bool fireMissile = false;
 
 	private void Awake() {
 		if (instance == null)

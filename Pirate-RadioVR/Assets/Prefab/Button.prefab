@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65457909772639998}
   - component: {fileID: 23437968145204730}
   - component: {fileID: 114921882781965788}
-  - component: {fileID: 114761171545448480}
+  - component: {fileID: 114683189088317324}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478510621161388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.426, y: 1.159, z: 0.855}
-  m_LocalScale: {x: 0.14082843, y: 0.1408285, z: 0.13231114}
+  m_LocalPosition: {x: 1.982, y: 3.042, z: 4.471}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114761171545448480
+--- !u!114 &114683189088317324
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1478510621161388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da90b1ade1033714d8dd461ad0c6c32c, type: 3}
+  m_Script: {fileID: 11500000, guid: e4bf44e8566a4c240be258849cc6583a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114921882781965788
