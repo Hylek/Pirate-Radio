@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class StationMover : MonoBehaviour {
 
-	//private RigidBody rb;
+    private Rigidbody rb;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate ()
+    {
+        rb.AddForce(Vector3.back * 0.35f * Time.deltaTime, ForceMode.Force);
 	}
 }
