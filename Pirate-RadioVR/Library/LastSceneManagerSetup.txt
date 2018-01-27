@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/area1light.unity
+=======
 - path: Assets/Scenes/area-3.unity
+>>>>>>> 2653e0ba8264c2b56236860a77d1d7646c3a133c
   isLoaded: 1
   isActive: 1

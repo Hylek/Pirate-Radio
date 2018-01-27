@@ -7,6 +7,9 @@ public class SwitchScript : MonoBehaviour {
   private int VIBRATION_DURATION_IN_MILLISECONDS = 50;
   private float MAX_VIBRATION_STRENGTH = 0.7f;
   private float MAX_VIBRATION_ANGLE = 35f;
+	private bool alreadyPulled = false;
+
+  GlobalScript globalScript;
 
   void Start () {
     oldXRotation = transform.eulerAngles.x;
@@ -29,12 +32,10 @@ public class SwitchScript : MonoBehaviour {
     }
     oldXRotation = newXRotation;
 
-	if (newXRotation < - 160.0f)
+		if (newXRotation < - 160.0f && !alreadyPulled)
 	{
-			// we need three booleans (array maybe) for whether the switch is flicked
-			// or use the Animator
-			// idk
-
+			globalScript.switchesToPull -= 1;
+			alreadyPulled = true;
 	}
   }
 }
