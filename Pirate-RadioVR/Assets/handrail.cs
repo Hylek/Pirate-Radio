@@ -31,7 +31,7 @@ public class handrail : MonoBehaviour {
     {
         controller = null;
         grabbed = false;
-        originalControllerPos = new Vector3(0,0,0);
+       // originalControllerPos = new Vector3(0,0,0);
     }
 
     // Update is called once per frame
@@ -41,7 +41,12 @@ public class handrail : MonoBehaviour {
         {
             newControllerPos = controller.transform.position;
             Vector3 moveamt = originalControllerPos - newControllerPos;
-            
+            xpos = playerrig.transform.position.x;
+            ypos = playerrig.transform.position.y;
+            zpos = playerrig.transform.position.z;
+
+
+
             if (X)
             {
                 xpos = playerrig.transform.position.x + moveamt.x;
