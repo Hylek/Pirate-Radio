@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: 877691e06d1f49a419c2775ad3c4d06b
-timeCreated: 1517065573
+guid: 469a563e3f3965e4d9540207a7b7f767
+timeCreated: 1517067512
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: wall A3 03
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: Material.001
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
