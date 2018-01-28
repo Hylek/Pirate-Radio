@@ -10,8 +10,8 @@ public class SwitchBoardController : MonoBehaviour {
     public AudioClip omarTrigger = null;
     public Triggerdoorscript tds;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
        
 	}
 	
