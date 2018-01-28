@@ -23,4 +23,14 @@ public class SwitchBoardController : MonoBehaviour {
         audioSource.Play();
     }
 
+    void ViveGripInteractionStart()
+    {
+        transform.position += new Vector3(0, 0, 0.05f);
+    }
+
+    void ViveGripInteractionStop()
+    {
+        transform.position -= new Vector3(0, 0, 0.05f);
+    }
+
 }
