@@ -1,10 +1,6 @@
 fileFormatVersion: 2
 guid: 7d52c05a21f14204783a92cbef2c02cb
-<<<<<<< HEAD
-timeCreated: 1517090745
-=======
 timeCreated: 1517111754
->>>>>>> lights
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -64,11 +60,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> lights
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
