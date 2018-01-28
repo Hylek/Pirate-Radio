@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FireMissile : MonoBehaviour {
-	GlobalScript globalScript;
+	public GlobalScript globalScript;
 	
 	// Update is called once per frame
 	void FixedUpdate ()
