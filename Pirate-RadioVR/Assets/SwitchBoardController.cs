@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class SwitchBoardController : MonoBehaviour {
 
-    public AudioSource audioSource;
-    public AudioClip godSake;
+    public AudioSource audioSource = null;
+    public AudioSource omarAudioSource = null;
+    public AudioClip clip = null;
+    public AudioClip omarTrigger = null;
 
 	// Use this for initialization
 	void Start () {
-
+       
 	}
 	
 	// Update is called once per frame
@@ -17,16 +19,30 @@ public class SwitchBoardController : MonoBehaviour {
 
     }
 
-    public void PlayGodSake()
+    public void PlayDoorSound()
     {
-        audioSource.clip = godSake;
-        audioSource.Play();
+        if(omarAudioSource != null && omarTrigger != null)
+        {
+            omarAudioSource.clip = omarTrigger;
+            omarAudioSource.Play();
+        }
+    }
+
+    public void PlaySound()
+    {
+        if(audioSource != null && clip != null)
+        {
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
     }
 
     void ViveGripInteractionStart()
     {
         transform.position += new Vector3(0.05f, 0, 0);
-        PlayGodSake();
+        PlaySound();
+        PlayDoorSound();
+        Triggerdoorscript.instance.playerHere = 1;
     }
 
     void ViveGripInteractionStop()

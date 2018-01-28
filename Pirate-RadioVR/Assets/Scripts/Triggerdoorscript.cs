@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Triggerdoorscript : MonoBehaviour {
 
+    public static Triggerdoorscript instance = null;
     public int playerHere;
     private float timer = 1.6f;
 
@@ -19,6 +20,7 @@ public class Triggerdoorscript : MonoBehaviour {
 
     private void Awake()
     {
+        instance = this;
         closed = transform.localPosition;
         open = new Vector3(transform.localPosition.x, 2, transform.localPosition.z);
     }
