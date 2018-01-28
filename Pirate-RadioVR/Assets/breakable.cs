@@ -8,6 +8,7 @@ public class breakable : MonoBehaviour
 {
     public GameObject[] unlockables;
     public GameObject[] deactivateables;
+    public MonoBehaviour[] activateables;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -34,6 +35,17 @@ public class breakable : MonoBehaviour
                 {
 
                     item.SetActive(false);
+
+
+                }
+            }
+            if (activateables != null)
+            {
+
+                foreach (MonoBehaviour item in activateables)
+                {
+
+                    item.enabled = true;
 
 
                 }
