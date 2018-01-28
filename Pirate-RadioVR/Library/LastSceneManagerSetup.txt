@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/area1light.unity
+- path: Assets/Scenes/lift-scene.unity
   isLoaded: 1
   isActive: 1
