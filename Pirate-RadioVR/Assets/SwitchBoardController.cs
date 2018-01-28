@@ -9,6 +9,7 @@ public class SwitchBoardController : MonoBehaviour {
     public AudioClip clip = null;
     public AudioClip omarTrigger = null;
     public Triggerdoorscript tds;
+    public MonoBehaviour scenetrans;
 
     // Use this for initialization
     void Start () {
@@ -44,6 +45,8 @@ public class SwitchBoardController : MonoBehaviour {
         PlaySound();
         PlayDoorSound();
         tds.playerHere = 1;
+        if (scenetrans != null)
+            scenetrans.enabled = true;
     }
 
     void ViveGripInteractionStop()
