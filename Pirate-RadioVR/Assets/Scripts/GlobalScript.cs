@@ -7,12 +7,12 @@ public class GlobalScript : MonoBehaviour {
 	public int switchesToPull = 3;
 	public bool fireMissile = false;
 
-	private void Awake() {
+	/*private void Awake() {
 		if (instance == null)
 			instance = this;
 		else if (instance != null)
 			Destroy (gameObject);
-	}
+	}*/
 
 	// Use this for initialization
 	void Start () {
