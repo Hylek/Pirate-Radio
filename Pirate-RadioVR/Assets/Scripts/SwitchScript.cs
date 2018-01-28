@@ -37,5 +37,9 @@ public class SwitchScript : MonoBehaviour {
 			globalScript.switchesToPull -= 1;
 			alreadyPulled = true;
 	}
+
+	if (globalScript.switchesToPull <= 0) {
+		// Cut the lights!
+	}
   }
 }
