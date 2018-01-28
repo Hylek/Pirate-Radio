@@ -25,12 +25,13 @@ public class SwitchBoardController : MonoBehaviour {
 
     void ViveGripInteractionStart()
     {
-        transform.position += new Vector3(0, 0, 0.05f);
+        transform.position += new Vector3(0.05f, 0, 0);
+        PlayGodSake();
     }
 
     void ViveGripInteractionStop()
     {
-        transform.position -= new Vector3(0, 0, 0.05f);
+        transform.position -= new Vector3(0.05f, 0, 0);
     }
 
 }
