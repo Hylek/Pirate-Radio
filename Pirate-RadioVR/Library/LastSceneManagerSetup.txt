@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/area-3.unity
 =======
 - path: Assets/Scenes/area1light.unity
 >>>>>>> ffb9c3fd67c9f9cca005e35a526bf92d9a7fb53b
+=======
+- path: Assets/Scenes/lift-scene.unity
+>>>>>>> lights
   isLoaded: 1
   isActive: 1

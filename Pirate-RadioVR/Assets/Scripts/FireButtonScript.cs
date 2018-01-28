@@ -7,7 +7,8 @@ public class FireButtonScript : MonoBehaviour {
   private int direction = 1;
   private int VIBRATION_DURATION_IN_MILLISECONDS = 25;
   private float VIBRATION_STRENGTH = 0.4f;
-  GlobalScript globalScript;
+    public bool BANG= false;
+  public GlobalScript globalScript;
 
   void Start () {
     ResetDistance();
@@ -29,7 +30,9 @@ public class FireButtonScript : MonoBehaviour {
 
   IEnumerator MoveBack() {
     direction *= -1;
-    ResetDistance();
+        BANG = true;
+        globalScript.fireMissile = true;
+        ResetDistance();
     while (distance > 0) {
       Increment();
       yield return null;
@@ -50,9 +53,6 @@ public class FireButtonScript : MonoBehaviour {
     distance = 0.03f;
   }
 
-  void Update() {
-		if (distance <= 0.0f) {
-			globalScript.fireMissile = true;
-		}
-  }
+
+  
 }
