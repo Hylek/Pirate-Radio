@@ -8,9 +8,10 @@ public class SwitchBoardController : MonoBehaviour {
     public AudioSource omarAudioSource = null;
     public AudioClip clip = null;
     public AudioClip omarTrigger = null;
+    public Triggerdoorscript tds;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
        
 	}
 	
@@ -42,7 +43,7 @@ public class SwitchBoardController : MonoBehaviour {
         transform.position += new Vector3(0.05f, 0, 0);
         PlaySound();
         PlayDoorSound();
-        Triggerdoorscript.instance.playerHere = 1;
+        tds.playerHere = 1;
     }
 
     void ViveGripInteractionStop()
