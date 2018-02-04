@@ -12,7 +12,7 @@ public class handrail : MonoBehaviour {
     public GameObject playerrig;
     private Vector3 originalControllerPos;
     private Vector3 newControllerPos;
-
+    public AudioSource sound2play;
 
     // Use this for initialization
     void Start () {
@@ -25,6 +25,12 @@ public class handrail : MonoBehaviour {
         controller = gripPoint.controller;
         grabbed = true;
         originalControllerPos = controller.transform.position;
+
+        if (sound2play != null)
+        {
+            sound2play.enabled = true;
+        }
+
     }
 
     void ViveGripGrabStop()

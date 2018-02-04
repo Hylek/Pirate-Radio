@@ -23,7 +23,9 @@ public class SwitchBoardController : MonoBehaviour {
 
     public void PlayDoorSound()
     {
-        if(omarAudioSource != null && omarTrigger != null)
+        omarAudioSource.enabled = true;
+
+        if (omarAudioSource != null && omarTrigger != null)
         {
             omarAudioSource.clip = omarTrigger;
             omarAudioSource.Play();
